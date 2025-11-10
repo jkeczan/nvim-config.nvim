@@ -391,6 +391,17 @@ require('lazy').setup({
         --   },
         -- },
         -- pickers = {}
+        defaults = {
+          file_ignore_patterns = {
+            'node_modules',
+            'dist',
+            'build',
+            '.git',
+            'coverage',
+            '%.lock',
+            'package-lock.json',
+          },
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
